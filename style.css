@@ -1,0 +1,111 @@
+/* info */
+
+.info
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 3rem 2rem 3rem;
+}
+.info .about 
+{
+margin-right: 10em;
+width: 30%;
+}
+.about h1{
+    font-size: 3.5rem;
+    color:#511f50;
+    font-weight: bolder;
+}
+.about p{
+    color:gray
+}
+.fa-star
+{
+    color:yellow;
+}
+.reviews
+{
+    margin: 5% 0 0 20%;
+}
+.row1,.row2,.row3
+{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    align-items: center;
+    background-color: #f7f2f8;
+    border-radius: 7px ;
+    padding: 1px 26px;
+    margin-bottom: 10px;
+    color: #511f50;
+}
+.row2
+{
+    margin-left: 4%;
+}
+.row3{
+    margin-left: 8%;
+}
+.row1 p,.row2 p,.row3 p{
+    margin-left: 12px;
+}
+
+/* customers */
+.container
+{
+    margin: 0 2rem;
+}
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.row .col1,.col2,.col3
+{
+    width:300px;
+    background-color: #511f50;
+    color: white;
+    border-radius: 5px;
+    padding: 1em;
+}
+.profile img{
+    border-radius: 50%;
+    width: 20%;
+}
+.profile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.col2
+{
+    margin-top:2%;    
+}
+.col3
+{
+    margin-top:4%;    
+}
+
+
+/* media queries */
+@media only screen and (max-width: 700px) 
+{
+    .info .about
+    {
+        width: 100%;
+        margin: 2rem 1rem;
+        text-align: center;
+        text-justify: inter-word;
+    }
+    .reviews
+    {
+        margin: 8%;
+        text-align: center;
+    }
+    .row1, .row2, .row3{
+        margin: 0;
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+}
